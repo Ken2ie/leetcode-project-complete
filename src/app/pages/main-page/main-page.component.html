@@ -1,0 +1,19 @@
+<div class="main">
+    <div class="container">
+        @for (rows of triangle; track $index) {
+            <div class="pascal-triangle">
+                <div class="pascal-numbers">
+                    @for (numbers of rows; track $index) {
+                        <div class="hexagon">
+                            <span>{{numbers}}</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="return">
+    <span [routerLink]="['']"> <span class="material-symbols-outlined">arrow_back</span> Go back</span>
+</div>

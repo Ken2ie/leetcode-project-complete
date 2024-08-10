@@ -1,0 +1,13 @@
+<div class="input-page">
+    <div class="container">
+        <h2>Generate Pascal’s Triangle</h2>
+        <p>Enter the number of rows to see the beautiful pattern of Pascal's Triangle. Each number in the triangle is the sum of the two directly above it. </p>
+        
+        <form>
+            <input type="text" name="inputNumber" [(ngModel)]="inputNumber" placeholder="Enter the number of rows">
+
+        <!-- Modularize when there is time -->
+        <button (click)="parseNumberToMainPage()">Generate Pascal’s Triangle</button>
+        </form>
+    </div>
+</div>
